@@ -212,14 +212,20 @@ p{ margin:0; }
 
 /* ---------- Nutrition ---------- */
 .products{ display:grid; grid-template-columns:repeat(4,1fr); gap:18px; margin-bottom:clamp(30px,4vw,44px); }
-.pcard{ position:relative; padding:26px 24px; border-radius:var(--r-lg); background:var(--surface); border:1px solid var(--line); box-shadow:var(--sh-s); transition:transform .3s var(--ease), box-shadow .3s, border-color .3s; }
+.pcard{ position:relative; overflow:hidden; border-radius:var(--r-lg); background:var(--surface); border:1px solid var(--line); box-shadow:var(--sh-s); transition:transform .3s var(--ease), box-shadow .3s, border-color .3s; }
 .pcard:hover{ transform:translateY(-6px); box-shadow:var(--sh-m); }
-.pcard.premium{ border-color:var(--gold-2); background:linear-gradient(165deg,#fffaf0,#fdf3df); }
-.flag{ position:absolute; top:16px; right:16px; display:inline-flex; align-items:center; gap:5px; font-family:"Sora",sans-serif; font-weight:600; font-size:11px; letter-spacing:.03em; color:#2a1f08; background:var(--grad-gold); padding:4px 10px; border-radius:var(--pill); }
+.pcard.premium{ border-color:var(--gold-2); box-shadow:0 18px 40px -22px rgba(189,143,46,.5); }
+/* tuile visuelle produit */
+.pcard-media{ position:relative; height:232px; display:grid; place-items:center; padding:16px; background:radial-gradient(circle at 50% 40%, #201d24 0%, #0d0c10 78%); border-bottom:1px solid var(--line); }
+.pcard-media img{ max-height:200px; max-width:82%; width:auto; height:auto; filter:drop-shadow(0 12px 18px rgba(0,0,0,.55)); transition:transform .35s var(--ease); }
+.pcard:hover .pcard-media img{ transform:translateY(-4px) scale(1.03); }
+.pcard-body{ padding:20px 22px 22px; }
+.pcard-head{ display:flex; align-items:center; justify-content:space-between; gap:10px; margin-bottom:2px; }
+.flag{ position:absolute; top:12px; right:12px; z-index:2; display:inline-flex; align-items:center; gap:5px; font-family:"Sora",sans-serif; font-weight:600; font-size:11px; letter-spacing:.03em; color:#2a1f08; background:var(--grad-gold); padding:4px 10px; border-radius:var(--pill); box-shadow:0 6px 14px -6px rgba(0,0,0,.5); }
 .flag svg{ width:12px; height:12px; fill:currentColor; stroke:none; }
-.pcard h3{ font-size:22px; margin-bottom:10px; }
-.badge{ display:inline-block; font-family:"Sora",sans-serif; font-weight:600; font-size:12px; letter-spacing:.02em; color:var(--gold-deep); background:rgba(189,143,46,.1); border:1px solid var(--line-2); padding:3px 12px; border-radius:var(--pill); }
-.macros{ display:flex; flex-direction:column; gap:8px; margin:20px 0; padding:18px 0; border-block:1px solid var(--line); }
+.pcard h3{ font-size:21px; }
+.badge{ display:inline-block; flex:none; font-family:"Sora",sans-serif; font-weight:600; font-size:12px; letter-spacing:.02em; color:var(--gold-deep); background:rgba(189,143,46,.1); border:1px solid var(--line-2); padding:3px 12px; border-radius:var(--pill); }
+.macros{ display:flex; flex-direction:column; gap:8px; margin:16px 0; padding:16px 0; border-block:1px solid var(--line); }
 .macros span{ display:flex; justify-content:space-between; font-size:14px; color:var(--ink-2); }
 .macros b{ font-family:"Sora",sans-serif; font-weight:600; color:var(--ink); }
 .pcard-foot{ display:flex; align-items:baseline; justify-content:space-between; }

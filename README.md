@@ -55,6 +55,8 @@ Le site est livré avec des zones photo prêtes, remplies par un dégradé chale
 
 (déposer les fichiers dans `assets/`). Une fois la photo posée, on peut retirer le petit repère en supprimant la ligne `<span class="photo-hint">...</span>` correspondante dans `index.html`. Format conseillé : image nette, orientation portrait pour le héro, paysage pour les deux autres.
 
+**Visuels des sacs de croquettes** : les 4 packagings affichés dans la section Nutrition sont dans `assets/products/` (energy, ultra, wild, sport). Ils ont été recadrés depuis la capture fournie. Pour en changer un, remplacer le fichier correspondant en gardant le même nom.
+
 ---
 
 ## Remplacer le logo
