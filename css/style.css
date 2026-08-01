@@ -161,19 +161,42 @@ p{ margin:0; }
 .paw-divider svg:nth-child(3){ opacity:.3; transform:rotate(12deg) scale(.85); }
 
 /* ---------- Cartes services ---------- */
-.cards-3{ display:grid; grid-template-columns:repeat(3,1fr); gap:22px; }
-.scard{ position:relative; padding:34px 30px 28px; border-radius:var(--r-lg); background:var(--surface); border:1px solid var(--line); box-shadow:var(--sh-s); overflow:hidden; transition:transform .3s var(--ease), box-shadow .3s, border-color .3s; }
-.scard::before{ content:""; position:absolute; inset:0 0 auto 0; height:4px; background:var(--grad-gold); transform:scaleX(0); transform-origin:left; transition:transform .35s var(--ease); }
-.scard:hover{ transform:translateY(-8px); box-shadow:var(--sh-m); border-color:var(--line-2); }
-.scard:hover::before{ transform:scaleX(1); }
-.scard-ico{ display:grid; place-items:center; width:60px; height:60px; margin-bottom:22px; border-radius:18px; background:linear-gradient(150deg,#fbf1dc,#f3e2bd); color:var(--gold-deep); border:1px solid var(--line-2); transition:transform .3s var(--ease); }
-.scard-ico svg{ width:30px; height:30px; fill:none; stroke:currentColor; stroke-width:1.7; stroke-linecap:round; stroke-linejoin:round; }
-.scard:hover .scard-ico{ transform:scale(1.08) rotate(-4deg); }
-.scard h3{ font-size:21px; margin-bottom:9px; }
-.scard p{ color:var(--ink-2); font-size:15px; margin-bottom:20px; }
-.link-go{ display:inline-flex; align-items:center; gap:7px; font-family:"Sora",sans-serif; font-weight:600; font-size:14.5px; color:var(--gold-deep); }
-.link-go .ico{ width:17px; height:17px; transition:transform .25s var(--ease); }
-.scard:hover .link-go .ico{ transform:translateX(5px); }
+/* ---------- Services : cartes vedettes ---------- */
+.services{ position:relative; }
+.svc-grid{ display:grid; grid-template-columns:repeat(3,1fr); gap:24px; }
+.svc{ position:relative; overflow:hidden; display:flex; flex-direction:column; padding:38px 32px 34px; border-radius:26px; background:var(--surface); border:1px solid var(--line); box-shadow:var(--sh-s); isolation:isolate; transition:transform .4s var(--ease), box-shadow .4s var(--ease), border-color .4s; }
+.svc:hover{ transform:translateY(-12px); box-shadow:var(--sh-l); border-color:var(--gold-2); }
+
+/* lueur dorée au survol */
+.svc-glow{ position:absolute; top:-42%; left:50%; transform:translateX(-50%); width:360px; height:360px; border-radius:50%; background:radial-gradient(circle, rgba(224,186,97,.30), transparent 66%); opacity:0; transition:opacity .5s var(--ease); pointer-events:none; z-index:0; }
+.svc:hover .svc-glow{ opacity:1; }
+
+/* balayage lumineux au survol */
+.svc::before{ content:""; position:absolute; top:0; left:-130%; width:75%; height:100%; background:linear-gradient(100deg, transparent, rgba(255,255,255,.55), transparent); transform:skewX(-16deg); transition:left .75s var(--ease); pointer-events:none; z-index:1; }
+.svc:hover::before{ left:135%; }
+
+/* liseré doré qui se remplit en bas */
+.svc::after{ content:""; position:absolute; left:0; bottom:0; height:4px; width:100%; background:var(--grad-gold); transform:scaleX(0); transform-origin:left; transition:transform .5s var(--ease); z-index:2; }
+.svc:hover::after{ transform:scaleX(1); }
+
+/* médaillon + anneau conique animé */
+.svc-emblem{ position:relative; z-index:2; display:grid; place-items:center; width:80px; height:80px; margin-bottom:24px; border-radius:50%; background:linear-gradient(150deg,#fbf1dc,#f1dfb6); color:var(--gold-deep); box-shadow:0 10px 24px -12px rgba(189,143,46,.5); transition:transform .4s var(--ease); }
+.svc-emblem svg{ position:relative; z-index:2; width:38px; height:38px; fill:none; stroke:currentColor; stroke-width:1.7; stroke-linecap:round; stroke-linejoin:round; transition:transform .45s var(--ease); }
+.svc-emblem .ring{ position:absolute; inset:-4px; border-radius:50%; background:conic-gradient(from 0deg, var(--gold-2), var(--gold-3) 12%, transparent 34%, transparent 66%, var(--gold-2)); opacity:0; transition:opacity .4s var(--ease); }
+.svc:hover .svc-emblem{ transform:scale(1.06); }
+.svc:hover .svc-emblem svg{ transform:rotate(-6deg) scale(1.08); }
+.svc:hover .svc-emblem .ring{ opacity:1; animation:spin 3.5s linear infinite; }
+
+.svc-title{ position:relative; z-index:2; font-size:24px; margin-bottom:12px; }
+.svc-desc{ position:relative; z-index:2; color:var(--ink-2); font-size:15px; line-height:1.6; margin-bottom:22px; }
+.svc-points{ position:relative; z-index:2; list-style:none; margin:0 0 28px; padding:0; display:grid; gap:11px; flex:1 0 auto; }
+.svc-points li{ display:flex; align-items:flex-start; gap:11px; font-size:14px; font-weight:500; color:var(--ink); }
+.svc-points svg{ width:18px; height:18px; flex:none; fill:var(--gold); stroke:none; margin-top:1px; }
+.svc-cta{ position:relative; z-index:2; align-self:flex-start; display:inline-flex; align-items:center; gap:9px; font-family:"Sora",sans-serif; font-weight:600; font-size:15px; color:#2a1f08; background:var(--grad-gold); padding:12px 24px; border-radius:var(--pill); box-shadow:var(--sh-gold); transition:transform .3s var(--ease), box-shadow .3s, gap .3s; }
+.svc-cta svg{ width:18px; height:18px; fill:none; stroke:currentColor; stroke-width:2.2; stroke-linecap:round; stroke-linejoin:round; transition:transform .3s var(--ease); }
+.svc:hover .svc-cta{ transform:translateY(-2px); box-shadow:0 20px 40px -14px rgba(189,143,46,.6); gap:13px; }
+.svc:hover .svc-cta svg{ transform:translateX(4px); }
+@keyframes spin{ to{ transform:rotate(360deg); } }
 
 /* ---------- Split (éducation / sitting) ---------- */
 .split{ display:grid; grid-template-columns:1fr 1fr; gap:clamp(32px,5vw,64px); align-items:center; }
@@ -268,8 +291,8 @@ p{ margin:0; }
 /* ---------- Révélations ---------- */
 .reveal{ opacity:0; transform:translateY(24px); transition:opacity .7s var(--ease), transform .7s var(--ease); }
 .reveal.in{ opacity:1; transform:none; }
-.cards-3 .scard:nth-child(2){ transition-delay:.09s; }
-.cards-3 .scard:nth-child(3){ transition-delay:.18s; }
+.svc-grid .svc:nth-child(2){ transition-delay:.1s; }
+.svc-grid .svc:nth-child(3){ transition-delay:.2s; }
 .products .pcard:nth-child(2){ transition-delay:.07s; }
 .products .pcard:nth-child(3){ transition-delay:.14s; }
 .products .pcard:nth-child(4){ transition-delay:.21s; }
@@ -299,7 +322,7 @@ p{ margin:0; }
   .fab{ display:flex; }
   .split{ grid-template-columns:1fr; }
   .split-visual{ order:-1 !important; max-width:520px; margin-inline:auto; width:100%; }
-  .cards-3{ grid-template-columns:1fr; max-width:440px; margin-inline:auto; }
+  .svc-grid{ grid-template-columns:1fr; max-width:460px; margin-inline:auto; }
   .perks{ grid-template-columns:1fr 1fr; }
   .perks li:nth-child(odd){ border-left:none; }
   .perks li:nth-child(3), .perks li:nth-child(4){ border-top:1px solid var(--line); padding-top:14px; }
