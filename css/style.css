@@ -125,13 +125,12 @@ p{ margin:0; }
 /* visuel héro */
 .hero-visual{ position:relative; }
 .photo{ position:relative; margin:0; border-radius:var(--r-xl); overflow:hidden; box-shadow:var(--sh-l); border:1px solid rgba(255,255,255,.6); }
-.photo::after{ content:""; position:absolute; inset:0; background-image:radial-gradient(circle at 22% 28%,rgba(255,255,255,.35) 0 3px,transparent 4px),radial-gradient(circle at 74% 68%,rgba(255,255,255,.28) 0 3px,transparent 4px); opacity:.6; }
 .photo-hint{ position:absolute; z-index:2; left:50%; bottom:18px; transform:translateX(-50%); display:inline-flex; align-items:center; gap:8px; padding:7px 14px; border-radius:var(--pill); background:rgba(33,31,27,.42); color:#fff; backdrop-filter:blur(6px); font-size:12.5px; font-weight:500; letter-spacing:.01em; white-space:nowrap; }
 .photo-hint svg{ width:16px; height:16px; fill:none; stroke:currentColor; stroke-width:2; stroke-linecap:round; stroke-linejoin:round; }
 /* fonds "placeholder" chaleureux (remplacés par de vraies photos, cf README) */
-.photo-hero{ aspect-ratio:4/4.4; background:linear-gradient(150deg,var(--peach-1),var(--peach-2) 55%,var(--peach-3)); }
-.photo-edu{ aspect-ratio:4/3.4; background:linear-gradient(150deg,#f3ead9,#e9d3ad 60%,#e0c79f); }
-.photo-sit{ aspect-ratio:4/3.4; background:linear-gradient(150deg,#f6ead2,#eed6ac 60%,#e6cfa0); }
+.photo-hero{ aspect-ratio:4/4.4; background:url("../assets/hero.jpg") center/cover no-repeat; }
+.photo-edu{ aspect-ratio:4/3.4; background:url("../assets/education.jpg") center/cover no-repeat; }
+.photo-sit{ aspect-ratio:4/3.4; background:url("../assets/sitting.jpg") center/cover no-repeat; }
 
 .float-card{ position:absolute; display:flex; align-items:center; gap:12px; padding:14px 18px; border-radius:18px; background:var(--surface); box-shadow:var(--sh-m); border:1px solid var(--line); }
 .float-card b{ display:block; font-family:"Sora",sans-serif; font-size:20px; line-height:1; color:var(--ink); }

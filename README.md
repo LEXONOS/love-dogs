@@ -43,19 +43,11 @@ python3 -m http.server 8000     # puis ouvrir http://localhost:8000
 
 ---
 
-## Ajouter les photos du client
+## Photos
 
-Le site est livré avec des zones photo prêtes, remplies par un dégradé chaleureux et un petit repère « Photo ». Il y a **3 emplacements** : héro, éducation et dog sitting. Pour poser une vraie photo, ouvrir `css/style.css` et remplacer le `background` du bloc concerné par l'image :
+Les 3 photos d'ambiance sont intégrées (`assets/hero.jpg`, `assets/education.jpg`, `assets/sitting.jpg`), recadrées au format exact de chaque emplacement. Pour en changer une, remplacer le fichier en gardant le même nom, ou modifier le chemin dans `css/style.css` (blocs `.photo-hero`, `.photo-edu`, `.photo-sit`). Format conseillé : portrait pour le héro, paysage pour les deux autres.
 
-```css
-.photo-hero{ background:url("../assets/hero.jpg") center/cover no-repeat; }
-.photo-edu { background:url("../assets/education.jpg") center/cover no-repeat; }
-.photo-sit { background:url("../assets/sitting.jpg") center/cover no-repeat; }
-```
-
-(déposer les fichiers dans `assets/`). Une fois la photo posée, on peut retirer le petit repère en supprimant la ligne `<span class="photo-hint">...</span>` correspondante dans `index.html`. Format conseillé : image nette, orientation portrait pour le héro, paysage pour les deux autres.
-
-**Visuels des sacs de croquettes** : les 4 packagings affichés dans la section Nutrition sont dans `assets/products/` (energy, ultra, wild, sport). Ils ont été recadrés depuis la capture fournie. Pour en changer un, remplacer le fichier correspondant en gardant le même nom.
+**Visuels des sacs de croquettes** : les 4 packagings de la section Nutrition sont dans `assets/products/` (energy, ultra, wild, sport), recadrés depuis la capture fournie. Pour en changer un, remplacer le fichier correspondant en gardant le même nom.
 
 ---
 
