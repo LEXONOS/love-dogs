@@ -51,4 +51,27 @@
     }, { threshold:0.4, rootMargin:"-45% 0px -50% 0px" });
     sections.forEach(function(s){ spy.observe(s); });
   }
+  /* compteurs animés (prix) */
+  var counters = document.querySelectorAll(".count");
+  function animateCount(el){
+    var to = parseInt(el.getAttribute("data-to"), 10) || 0;
+    if (reduce){ el.textContent = to; return; }
+    var dur = 900, start = null;
+    function step(ts){
+      if (!start) start = ts;
+      var p = Math.min((ts - start) / dur, 1);
+      var eased = 1 - Math.pow(1 - p, 3);
+      el.textContent = Math.round(to * eased);
+      if (p < 1) requestAnimationFrame(step); else el.textContent = to;
+    }
+    requestAnimationFrame(step);
+  }
+  if ("IntersectionObserver" in window && counters.length){
+    var co = new IntersectionObserver(function(entries){
+      entries.forEach(function(en){ if (en.isIntersecting){ animateCount(en.target); co.unobserve(en.target); } });
+    }, { threshold: 0.6 });
+    counters.forEach(function(el){ co.observe(el); });
+  } else {
+    counters.forEach(animateCount);
+  }
 })();

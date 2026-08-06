@@ -13,10 +13,16 @@ love-dogs/
 ├── index.html          Page unique (contenu, SEO, données structurées)
 ├── css/style.css       Styles (palette claire, mise en page, animations, responsive)
 ├── js/main.js          Menu mobile, header au scroll, révélations au défilement
+├── mentions-legales.html   Mentions légales (éditeur, hébergeur, RGPD)
+├── cgv.html                Conditions générales de vente
+├── css/style.css
+├── js/main.js
 ├── assets/
-│   ├── logo.svg        Emblème + wordmark (à remplacer par le logo officiel)
+│   ├── logo.png        Logo officiel Love Dog's (blason)
+│   ├── hero.jpg / education.jpg / sitting.jpg   Photos d'ambiance
+│   ├── products/       4 sacs de croquettes (energy, ultra, wild, sport)
 │   └── og-image.png    Image d'aperçu réseaux sociaux
-├── favicon.svg         Icône d'onglet
+├── favicon.png         Icône d'onglet (logo)
 ├── robots.txt
 ├── sitemap.xml
 └── README.md
@@ -51,11 +57,9 @@ Les 3 photos d'ambiance sont intégrées (`assets/hero.jpg`, `assets/education.j
 
 ---
 
-## Remplacer le logo
+## Logo
 
-L'emblème actuel (patte dorée) est une version propre aux couleurs de la marque, pour que le site soit complet tout de suite. Pour poser le vrai logo `icon-512` :
-- soit remplacer `assets/logo.svg` par le fichier fourni,
-- soit remplacer dans `index.html` les blocs `<span class="brand-badge">...</span>` (header + footer) par une image, par exemple `<img src="assets/logo.png" alt="Love Dog's" />`.
+Le logo officiel Love Dog's (le blason) est intégré partout : header, footer, favicon et image de partage. Il est stocké dans `assets/logo.png`. Pour le mettre à jour, remplacer ce fichier en gardant le même nom.
 
 ---
 
@@ -81,3 +85,17 @@ Déjà en place : `title`, meta description, mots-clés, Open Graph (partage ré
 - Aucune dépendance externe hors polices Google (Great Vibes, Sora, Inter).
 - Accessible : navigation clavier, focus visible, lien d'évitement, `prefers-reduced-motion` respecté.
 - Responsive du mobile au grand écran, bouton WhatsApp flottant sur mobile.
+
+---
+
+## Sections et fonctionnalités
+
+- **Header** : les 3 services (éducation, dog sitting, nutrition) sont présentés dès l'arrivée, sous forme de bandeau cliquable, pour qu'un visiteur qui scanne le QR code comprenne immédiatement l'offre.
+- **Tarifs dog sitting** : deux formules claires (1 ou 2 visites/jour) avec compteurs animés, plus les options (promenade, chien supplémentaire, déplacement).
+- **Abonnement croquettes** : bloc dédié à la livraison automatique mensuelle avec suivi personnalisé, en complément de l'achat à l'unité.
+
+## Pages légales — à compléter avant mise en ligne
+
+`mentions-legales.html` et `cgv.html` sont des **modèles** pré-remplis avec les informations de Love Dog's (association, SIRET, RNA, TVA), l'hébergeur OVH et la réalisation Novalem. Les mentions entre crochets `[ ... ]` doivent être complétées : adresse du siège, nom du représentant (directeur de publication), moyens de paiement, conditions d'annulation, médiateur de la consommation. Une relecture par un professionnel du droit est recommandée.
+
+Le lien de crédit « Novalem » en pied de page pointe vers `https://novalem-recrutement.fr` ; le domaine du site dans `sitemap.xml` (`love-dogs.fr`) est un exemple à adapter au domaine réel.
