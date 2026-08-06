@@ -238,6 +238,14 @@ p{ margin:0; }
 .chip{ font-family:"Sora",sans-serif; font-weight:500; font-size:13.5px; padding:8px 15px; border-radius:var(--pill); background:var(--surface); border:1px solid var(--line-2); color:var(--ink-2); box-shadow:var(--sh-s); }
 
 .row-cta{ display:flex; flex-wrap:wrap; align-items:center; gap:16px 22px; }
+
+/* offre éducation mise en avant */
+.edu-offer{ display:flex; align-items:center; gap:15px; padding:18px 22px; margin-bottom:22px; border-radius:18px; background:linear-gradient(120deg, rgba(224,186,97,.18), rgba(224,186,97,.05)); border:1px solid var(--gold-2); }
+.edu-offer-ico{ display:grid; place-items:center; width:46px; height:46px; flex:none; border-radius:50%; background:var(--grad-gold); color:#2a1f08; box-shadow:var(--sh-gold); }
+.edu-offer-ico svg{ width:24px; height:24px; fill:currentColor; stroke:none; }
+.edu-offer-txt{ display:flex; flex-direction:column; gap:2px; }
+.edu-offer-txt b{ font-family:"Sora",sans-serif; font-weight:700; font-size:17px; color:var(--ink); }
+.edu-offer-txt span{ font-size:14px; color:var(--gold-deep); font-weight:500; }
 .row-cta.center{ justify-content:center; }
 .price-tag{ font-size:14.5px; color:var(--ink-2); }
 .price-tag b{ font-family:"Sora",sans-serif; font-size:20px; color:var(--gold-deep); }
