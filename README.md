@@ -20,7 +20,6 @@ love-dogs/
 ├── assets/
 │   ├── logo.png        Logo officiel Love Dog's (blason)
 │   ├── hero.jpg / education.jpg / sitting.jpg   Photos d'ambiance
-│   ├── products/       4 sacs de croquettes (energy, ultra, wild, sport)
 │   └── og-image.png    Image d'aperçu réseaux sociaux
 ├── favicon.png         Icône d'onglet (logo)
 ├── robots.txt
@@ -53,7 +52,7 @@ python3 -m http.server 8000     # puis ouvrir http://localhost:8000
 
 Les 3 photos d'ambiance sont intégrées (`assets/hero.jpg`, `assets/education.jpg`, `assets/sitting.jpg`), recadrées au format exact de chaque emplacement. Pour en changer une, remplacer le fichier en gardant le même nom, ou modifier le chemin dans `css/style.css` (blocs `.photo-hero`, `.photo-edu`, `.photo-sit`). Format conseillé : portrait pour le héro, paysage pour les deux autres.
 
-**Visuels des sacs de croquettes** : les 4 packagings de la section Nutrition sont dans `assets/products/` (energy, ultra, wild, sport), recadrés depuis la capture fournie. Pour en changer un, remplacer le fichier correspondant en gardant le même nom.
+**Visuels des sacs de croquettes** : les 4 sacs de la section Nutrition sont des illustrations vectorielles (SVG) dessinées directement dans `index.html`, une couleur par produit (Énergie rouge, Ultra Énergie noir, Wild Spirit doré, Sport bronze). Elles s'affichent toujours, sans dépendre d'un fichier image. Pour changer un nom ou une couleur, modifier le bloc SVG correspondant dans la section `#nutrition`.
 
 ---
 
