@@ -297,7 +297,7 @@ p{ margin:0; }
 .pcard.premium{ border-color:var(--gold-2); box-shadow:0 18px 40px -22px rgba(189,143,46,.5); }
 /* tuile visuelle produit */
 .pcard-media{ position:relative; height:230px; display:grid; place-items:center; padding:14px 16px 12px; background:linear-gradient(180deg,#fbfaf7,#f3f1ea); border-bottom:1px solid var(--line); }
-.pcard-media .bag{ height:100%; max-height:214px; width:auto; transition:transform .4s var(--ease); }
+.pcard-media .bag{ height:100%; max-height:214px; width:auto; max-width:100%; object-fit:contain; filter:drop-shadow(0 14px 18px rgba(40,30,15,.22)); transition:transform .4s var(--ease); }
 .pcard:hover .pcard-media .bag{ transform:translateY(-5px) rotate(-1.5deg); }
 .pcard-body{ padding:20px 22px 22px; }
 .pcard-head{ display:flex; align-items:center; justify-content:space-between; gap:10px; margin-bottom:2px; }
@@ -317,22 +317,6 @@ p{ margin:0; }
 .perks li + li{ border-left:1px solid var(--line); }
 .perks .ico{ width:24px; height:24px; color:var(--gold); flex:none; }
 
-/* ---------- Abonnement nutrition ---------- */
-.subscribe{ display:grid; grid-template-columns:230px 1fr; gap:clamp(24px,3vw,40px); align-items:center; padding:clamp(26px,3.5vw,40px); border-radius:26px; background:linear-gradient(135deg,#fffaf0 0%,#fdf3de 55%,#faedd0 100%); border:1px solid var(--gold-2); box-shadow:0 26px 60px -30px rgba(189,143,46,.55); position:relative; overflow:hidden; margin-bottom:clamp(26px,3.5vw,40px); }
-.subscribe::before{ content:""; position:absolute; right:-90px; top:-90px; width:300px; height:300px; border-radius:50%; background:radial-gradient(circle,rgba(224,186,97,.28),transparent 70%); }
-.subscribe-visual{ position:relative; display:grid; place-items:center; gap:16px; padding:26px 0; }
-.subscribe-badge{ display:grid; place-items:center; width:104px; height:104px; border-radius:50%; background:var(--grad-gold); color:#2a1f08; box-shadow:0 16px 34px -12px rgba(224,186,97,.6); animation:pulseRing 3.4s ease-in-out infinite; }
-.subscribe-badge svg{ width:52px; height:52px; fill:none; stroke:currentColor; stroke-width:1.7; stroke-linecap:round; stroke-linejoin:round; }
-@keyframes pulseRing{ 0%,100%{ box-shadow:0 16px 34px -12px rgba(224,186,97,.5); } 50%{ box-shadow:0 16px 34px -12px rgba(224,186,97,.5), 0 0 0 12px rgba(224,186,97,.14); } }
-.subscribe-cycle{ font-family:"Sora",sans-serif; font-weight:600; font-size:15px; letter-spacing:.06em; text-transform:uppercase; color:var(--gold-deep); }
-.subscribe-body{ position:relative; }
-.subscribe-tag{ display:inline-flex; align-items:center; gap:8px; font-family:"Sora",sans-serif; font-weight:600; font-size:13px; letter-spacing:.04em; text-transform:uppercase; color:var(--gold-deep); margin-bottom:12px; }
-.subscribe-tag .ico{ width:17px; height:17px; }
-.subscribe-title{ font-family:"Sora",sans-serif; font-weight:800; font-size:clamp(21px,2.6vw,30px); letter-spacing:-.02em; color:var(--ink); line-height:1.15; }
-.subscribe-desc{ margin:12px 0 18px; color:var(--ink-2); font-size:clamp(14.5px,1.5vw,16px); line-height:1.65; max-width:60ch; }
-.subscribe-points{ display:grid; grid-template-columns:1fr 1fr; gap:11px 20px; margin-bottom:24px; }
-.subscribe-points span{ display:flex; align-items:center; gap:10px; font-size:14.5px; color:var(--ink); }
-.subscribe-points svg{ width:19px; height:19px; flex:none; fill:none; stroke:var(--gold-deep); stroke-width:2.2; stroke-linecap:round; stroke-linejoin:round; }
 .unit-note{ font-size:14.5px; color:var(--ink-2); }
 
 /* ---------- Contact (accent anthracite) ---------- */
@@ -416,8 +400,8 @@ p{ margin:0; }
   body{ font-size:16px; }
   .hero-title{ font-size:clamp(38px,11vw,48px); }
   .products{ grid-template-columns:1fr 1fr; gap:12px; }
-  .pcard-media{ height:132px; padding:10px 10px 6px; }
-  .pcard-media .bag{ max-height:120px; }
+  .pcard-media{ height:168px; padding:10px 10px 6px; }
+  .pcard-media .bag{ max-height:156px; }
   .pcard-body{ padding:12px 13px 14px; }
   .pcard-head{ flex-direction:column; align-items:flex-start; gap:5px; }
   .pcard h3{ font-size:15.5px; }
@@ -431,11 +415,6 @@ p{ margin:0; }
   .addons{ grid-template-columns:1fr; max-width:460px; }
   .perks{ grid-template-columns:1fr; }
   .perks li + li{ border-left:none; border-top:1px solid var(--line); padding-top:14px; }
-  .subscribe{ grid-template-columns:1fr; text-align:center; }
-  .subscribe-visual{ padding:0 0 6px; }
-  .subscribe-desc{ margin-inline:auto; }
-  .subscribe-points{ grid-template-columns:1fr; text-align:left; max-width:320px; margin-inline:auto; }
-  .subscribe-tag{ justify-content:center; }
   .contact-cards{ grid-template-columns:1fr; }
   .btn{ width:100%; justify-content:center; }
   .hero-cta .btn, .row-cta .btn{ width:100%; }

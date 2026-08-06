@@ -41,40 +41,41 @@
     <div class="legal-note"><strong>Page de travail, à ne pas mettre en ligne.</strong> Elle liste ce qu'il reste à récupérer auprès d'Alexandre pour rendre les mentions légales complètes. Une fois tout rempli dans <strong>mentions-legales.html</strong>, supprime ce fichier.</div>
 
     <section>
-      <h2>À demander à Love Dog's</h2>
+      <h2>Ce qu'il reste à confirmer</h2>
       <ol class="q">
-        <li><b>Adresse complète du siège de l'association</b><small>Numéro, rue, code postal et ville (en Guadeloupe).</small></li>
-        <li><b>Nom et prénom du représentant légal</b><small>C'est lui qui figure comme directeur de la publication. Sans doute Alexandre : confirmer le nom complet.</small></li>
-        <li><b>Adresse email de contact à afficher</b><small>Proposé : lovedogs971@gmail.com. À confirmer.</small></li>
-        <li><b>Numéro de téléphone à afficher</b><small>Proposé : 0690 30 23 59. À confirmer.</small></li>
-        <li><b>Nom de domaine définitif du site</b><small>L'adresse finale (par exemple love-dogs.fr). Sert pour le sitemap et les liens.</small></li>
-        <li><b>Logo et photos : origine et droits</b><small>Confirmer qu'Alexandre possède bien le logo et les photos, ou qu'il a le droit de les utiliser.</small></li>
+        <li><b>Régime de TVA</b><small>Love Dog's est-il assujetti à la TVA ? Si oui, récupérer le numéro de TVA intracommunautaire (il est obligatoire dans les mentions légales). Si l'entreprise est en franchise en base, on affiche à la place « TVA non applicable, article 293 B du CGI ». Le bloc est déjà écrit et commenté dans le code, il n'y a qu'à le décommenter.</small></li>
+        <li><b>Adresse email et téléphone affichés</b><small>Actuellement lovedogs971@gmail.com et 0690 30 23 59. À valider une dernière fois avec Alexandre.</small></li>
+        <li><b>Nom de domaine définitif</b><small>Le site est écrit pour love-dogs.fr. Si le domaine change, il faut mettre à jour le lien canonique, le sitemap et l'URL des images de partage.</small></li>
+        <li><b>Logo et photos</b><small>Confirmer qu'Alexandre possède bien le logo et les photos des chiens, ou qu'il a le droit de les utiliser.</small></li>
+        <li><b>Visuels des sacs de croquettes</b><small>Ce sont les photos officielles des fabricants. Elles sont utilisées pour présenter des produits réellement revendus, ce qui est l'usage courant, mais si un fournisseur le demande on peut les remplacer par des photos prises en boutique.</small></li>
       </ol>
     </section>
 
     <section>
-      <h2>À confirmer (déjà pré-rempli)</h2>
-      <p>Ces informations sont déjà dans la page, à vérifier une dernière fois avec Alexandre :</p>
+      <h2>Déjà renseigné dans les mentions légales</h2>
+      <p>Repris de la fiche d'entreprise officielle, rien à faire :</p>
       <dl class="legal-dl">
-        <dt>SIREN</dt><dd>879 667 806</dd>
-        <dt>SIRET (siège)</dt><dd>879 667 806 00019</dd>
-        <dt>N° RNA</dt><dd>W224009688 (inscription le 22/08/2019)</dd>
-        <dt>TVA intracommunautaire</dt><dd>FR90 879 667 806</dd>
-        <dt>Code APE</dt><dd>01.49Z</dd>
-        <dt>Objet</dt><dd>Éduquer et sociabiliser les maîtres et leurs chiens</dd>
-        <dt>Hébergeur</dt><dd>OVH SAS (déjà rempli, à modifier seulement si l'hébergeur change)</dd>
+        <dt>Responsable</dt><dd>Alexandre AL LAYOUS, entrepreneur individuel</dd>
+        <dt>Nom commercial</dt><dd>LOV DOG'S</dd>
+        <dt>Adresse</dt><dd>Mare Gaillard, porte 39, 2e étage — 97190 Le Gosier</dd>
+        <dt>SIREN</dt><dd>808 990 824</dd>
+        <dt>SIRET (siège)</dt><dd>808 990 824 00019</dd>
+        <dt>Code APE</dt><dd>4776Z</dd>
+        <dt>Immatriculation RNE</dt><dd>31/10/2014</dd>
+        <dt>Hébergeur</dt><dd>OVH SAS (à modifier seulement si l'hébergeur change)</dd>
       </dl>
     </section>
 
     <section>
       <h2>Où compléter dans le code</h2>
-      <p>Ouvre le fichier <strong>mentions-legales.html</strong> et cherche les mentions entre crochets <strong>[ ... ]</strong> : ce sont les champs à remplacer. Les repères <strong>&lt;!-- MODIFIER --&gt;</strong> dans le code t'indiquent exactement où. Une fois tout rempli, tu peux supprimer la bannière jaune en haut de la page.</p>
+      <p>Ouvre le fichier <strong>mentions-legales.html</strong> et cherche les repères <strong>&lt;!-- MODIFIER --&gt;</strong> : ils indiquent exactement les lignes à activer ou à remplacer. La page est déjà publiable en l'état, il ne manque que la ligne TVA.</p>
     </section>
 
     <section>
       <h2>Et les CGV ?</h2>
-      <p>Les conditions générales de vente ne sont pas obligatoires pour un site vitrine sans vente en ligne : chez Love Dog's, les ventes et réservations passent par téléphone ou WhatsApp. On les a donc retirées. Si un jour tu ajoutes du paiement en ligne ou une vraie boutique, on pourra créer une page CGV à ce moment-là.</p>
+      <p>Les conditions générales de vente ne sont pas obligatoires pour un site vitrine sans paiement en ligne : chez Love Dog's, les ventes et réservations passent par téléphone ou WhatsApp. Le fichier <strong>cgv.html</strong> existe mais n'est relié à aucun lien du site : c'est un brouillon, à finaliser (délais d'annulation, moyens de paiement, médiateur) avant d'être affiché, sinon on peut simplement le supprimer.</p>
     </section>
+
   </main>
 
   <footer class="ftr">

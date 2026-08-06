@@ -91,11 +91,11 @@ Déjà en place : `title`, meta description, mots-clés, Open Graph (partage ré
 
 - **Header** : les 3 services (éducation, dog sitting, nutrition) sont présentés dès l'arrivée, sous forme de bandeau cliquable, pour qu'un visiteur qui scanne le QR code comprenne immédiatement l'offre.
 - **Tarifs dog sitting** : deux formules claires (1 ou 2 visites/jour) avec compteurs animés, plus les options (promenade, chien supplémentaire, déplacement).
-- **Abonnement croquettes** : bloc dédié à la livraison automatique mensuelle avec suivi personnalisé, en complément de l'achat à l'unité.
+- **Nutrition** : les 4 références sont présentées avec les photos officielles des sacs (détourées sur fond transparent), les taux de protéines et matières grasses, et le prix au sac de 20 kg. Commande par WhatsApp, pas d'abonnement.
 
 ## Mentions légales et infos à compléter
 
-`mentions-legales.html` est **obligatoire** pour un site professionnel (loi LCEN). Elle est pré-remplie avec les informations de Love Dog's, l'hébergeur OVH et la réalisation Novalem. Les mentions entre crochets `[ ... ]` sont à compléter (adresse du siège, nom du représentant) : les repères `<!-- MODIFIER -->` dans le code indiquent où.
+`mentions-legales.html` est **obligatoire** pour un site professionnel (loi LCEN). Elle est renseignée avec les informations officielles de l'entreprise (Alexandre AL LAYOUS, EI, SIREN 808 990 824, SIRET 808 990 824 00019, APE 4776Z, Mare Gaillard 97190 Le Gosier), l'hébergeur OVH et la réalisation Novalem. La page est publiable en l'état : seule la ligne TVA reste à activer, elle est écrite et commentée dans le code au repère `<!-- MODIFIER -->`.
 
 `infos-a-completer.html` est une **page de travail** qui liste les questions à poser au client pour tout compléter. Elle n'est liée nulle part et ne doit pas être mise en ligne : à supprimer une fois les mentions légales finalisées.
 
