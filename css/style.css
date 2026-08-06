@@ -402,7 +402,8 @@ p{ margin:0; }
   .hero-services{ grid-template-columns:1fr; max-width:460px; margin-inline:auto; }
   .split{ grid-template-columns:1fr; }
   .split-visual{ order:-1 !important; max-width:520px; margin-inline:auto; width:100%; }
-  .svc-grid{ grid-template-columns:1fr; max-width:460px; margin-inline:auto; }
+  .services{ display:none; }
+  a[href="#services"]{ display:none; }
   .perks{ grid-template-columns:1fr 1fr; }
   .perks li:nth-child(odd){ border-left:none; }
   .perks li:nth-child(3), .perks li:nth-child(4){ border-top:1px solid var(--line); padding-top:14px; }
@@ -414,7 +415,18 @@ p{ margin:0; }
 @media (max-width:480px){
   body{ font-size:16px; }
   .hero-title{ font-size:clamp(38px,11vw,48px); }
-  .products{ grid-template-columns:1fr; }
+  .products{ grid-template-columns:1fr 1fr; gap:12px; }
+  .pcard-media{ height:132px; padding:10px 10px 6px; }
+  .pcard-media .bag{ max-height:120px; }
+  .pcard-body{ padding:12px 13px 14px; }
+  .pcard-head{ flex-direction:column; align-items:flex-start; gap:5px; }
+  .pcard h3{ font-size:15.5px; }
+  .badge{ font-size:10.5px; padding:2px 9px; }
+  .flag{ top:8px; right:8px; font-size:10px; padding:3px 8px; }
+  .macros{ margin:11px 0; padding:11px 0; gap:6px; }
+  .macros span{ font-size:12.5px; }
+  .pcard-foot .amt{ font-size:19px; }
+  .pcard-foot span{ font-size:12px; }
   .formulas{ grid-template-columns:1fr; max-width:420px; }
   .addons{ grid-template-columns:1fr; max-width:460px; }
   .perks{ grid-template-columns:1fr; }
