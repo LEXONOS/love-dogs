@@ -1,0 +1,100 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Infos à compléter · Love Dog's</title>
+  <meta name="description" content="Page de travail : informations à récupérer pour les mentions légales." />
+  <meta name="robots" content="noindex,nofollow" />
+  <link rel="icon" type="image/png" href="favicon.png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;600;700;800&family=Inter:wght@400;500;600&family=Great+Vibes&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+  <style>
+    .q{ list-style:none; padding:0; margin:0 0 8px; counter-reset:q; }
+    .q > li{ position:relative; padding:16px 18px 16px 54px; margin-bottom:12px; border:1px solid var(--line); border-radius:14px; background:var(--surface); box-shadow:var(--sh-s); }
+    .q > li::before{ counter-increment:q; content:counter(q); position:absolute; left:14px; top:16px; width:28px; height:28px; display:grid; place-items:center; border-radius:50%; background:var(--grad-gold); color:#2a1f08; font-family:"Sora",sans-serif; font-weight:700; font-size:14px; }
+    .q b{ display:block; font-family:"Sora",sans-serif; font-weight:600; font-size:16px; color:var(--ink); margin-bottom:3px; }
+    .q small{ display:block; font-size:13.5px; color:var(--ink-3); }
+  </style>
+</head>
+<body>
+  <!-- =====================================================================
+       PAGE DE TRAVAIL INTERNE - NE PAS METTRE EN LIGNE.
+       Sert uniquement à récupérer les infos manquantes auprès de Love Dog's.
+       Supprime ce fichier (infos-a-completer.html) une fois tout complété.
+       ===================================================================== -->
+  <header class="legal-header">
+    <div class="wrap">
+      <a href="index.html" class="brand">
+        <span class="brand-badge"><img src="assets/logo.png" alt="Logo Love Dog's" /></span>
+        <span class="brand-txt"><span class="brand-name">Love Dog's</span><span class="brand-tag">Page de travail</span></span>
+      </a>
+      <a href="index.html" class="legal-back"><svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg>Retour au site</a>
+    </div>
+  </header>
+
+  <main class="wrap legal-main">
+    <h1>Informations à compléter</h1>
+    <p class="legal-updated">Pour finaliser les mentions légales de Love Dog's</p>
+    <div class="legal-note"><strong>Page de travail, à ne pas mettre en ligne.</strong> Elle liste ce qu'il reste à récupérer auprès d'Alexandre pour rendre les mentions légales complètes. Une fois tout rempli dans <strong>mentions-legales.html</strong>, supprime ce fichier.</div>
+
+    <section>
+      <h2>À demander à Love Dog's</h2>
+      <ol class="q">
+        <li><b>Adresse complète du siège de l'association</b><small>Numéro, rue, code postal et ville (en Guadeloupe).</small></li>
+        <li><b>Nom et prénom du représentant légal</b><small>C'est lui qui figure comme directeur de la publication. Sans doute Alexandre : confirmer le nom complet.</small></li>
+        <li><b>Adresse email de contact à afficher</b><small>Proposé : lovedogs971@gmail.com. À confirmer.</small></li>
+        <li><b>Numéro de téléphone à afficher</b><small>Proposé : 0690 30 23 59. À confirmer.</small></li>
+        <li><b>Nom de domaine définitif du site</b><small>L'adresse finale (par exemple love-dogs.fr). Sert pour le sitemap et les liens.</small></li>
+        <li><b>Logo et photos : origine et droits</b><small>Confirmer qu'Alexandre possède bien le logo et les photos, ou qu'il a le droit de les utiliser.</small></li>
+      </ol>
+    </section>
+
+    <section>
+      <h2>À confirmer (déjà pré-rempli)</h2>
+      <p>Ces informations sont déjà dans la page, à vérifier une dernière fois avec Alexandre :</p>
+      <dl class="legal-dl">
+        <dt>SIREN</dt><dd>879 667 806</dd>
+        <dt>SIRET (siège)</dt><dd>879 667 806 00019</dd>
+        <dt>N° RNA</dt><dd>W224009688 (inscription le 22/08/2019)</dd>
+        <dt>TVA intracommunautaire</dt><dd>FR90 879 667 806</dd>
+        <dt>Code APE</dt><dd>01.49Z</dd>
+        <dt>Objet</dt><dd>Éduquer et sociabiliser les maîtres et leurs chiens</dd>
+        <dt>Hébergeur</dt><dd>OVH SAS (déjà rempli, à modifier seulement si l'hébergeur change)</dd>
+      </dl>
+    </section>
+
+    <section>
+      <h2>Où compléter dans le code</h2>
+      <p>Ouvre le fichier <strong>mentions-legales.html</strong> et cherche les mentions entre crochets <strong>[ ... ]</strong> : ce sont les champs à remplacer. Les repères <strong>&lt;!-- MODIFIER --&gt;</strong> dans le code t'indiquent exactement où. Une fois tout rempli, tu peux supprimer la bannière jaune en haut de la page.</p>
+    </section>
+
+    <section>
+      <h2>Et les CGV ?</h2>
+      <p>Les conditions générales de vente ne sont pas obligatoires pour un site vitrine sans vente en ligne : chez Love Dog's, les ventes et réservations passent par téléphone ou WhatsApp. On les a donc retirées. Si un jour tu ajoutes du paiement en ligne ou une vraie boutique, on pourra créer une page CGV à ce moment-là.</p>
+    </section>
+  </main>
+
+  <footer class="ftr">
+    <div class="wrap ftr-in">
+      <a href="index.html" class="brand">
+        <span class="brand-badge"><img src="assets/logo.png" alt="Logo Love Dog's" /></span>
+        <span class="brand-txt"><span class="brand-name">Love Dog's</span><span class="brand-tag">Partenaire canin · Guadeloupe</span></span>
+      </a>
+      <nav class="ftr-nav" aria-label="Liens de pied de page">
+        <a href="index.html#education">Éducation</a><a href="index.html#sitting">Dog sitting</a><a href="index.html#nutrition">Nutrition</a><a href="index.html#contact">Contact</a>
+      </nav>
+    </div>
+    <div class="ftr-bottom wrap">
+      <p>© <span id="year"></span> Love Dog's. Tous droits réservés.</p>
+      <nav class="ftr-legal" aria-label="Pages légales">
+        <a href="mentions-legales.html">Mentions légales</a>
+      </nav>
+      <p class="credit">Site réalisé par <a href="https://novalem-recrutement.fr" target="_blank" rel="noopener">Novalem</a></p>
+    </div>
+  </footer>
+  <script>document.getElementById('year').textContent=new Date().getFullYear();</script>
+</body>
+</html>

@@ -14,7 +14,7 @@ love-dogs/
 ├── css/style.css       Styles (palette claire, mise en page, animations, responsive)
 ├── js/main.js          Menu mobile, header au scroll, révélations au défilement
 ├── mentions-legales.html   Mentions légales (éditeur, hébergeur, RGPD)
-├── cgv.html                Conditions générales de vente
+├── infos-a-completer.html  Page de travail : questions à poser (NE PAS mettre en ligne)
 ├── css/style.css
 ├── js/main.js
 ├── assets/
@@ -93,8 +93,12 @@ Déjà en place : `title`, meta description, mots-clés, Open Graph (partage ré
 - **Tarifs dog sitting** : deux formules claires (1 ou 2 visites/jour) avec compteurs animés, plus les options (promenade, chien supplémentaire, déplacement).
 - **Abonnement croquettes** : bloc dédié à la livraison automatique mensuelle avec suivi personnalisé, en complément de l'achat à l'unité.
 
-## Pages légales — à compléter avant mise en ligne
+## Mentions légales et infos à compléter
 
-`mentions-legales.html` et `cgv.html` sont des **modèles** pré-remplis avec les informations de Love Dog's (association, SIRET, RNA, TVA), l'hébergeur OVH et la réalisation Novalem. Les mentions entre crochets `[ ... ]` doivent être complétées : adresse du siège, nom du représentant (directeur de publication), moyens de paiement, conditions d'annulation, médiateur de la consommation. Une relecture par un professionnel du droit est recommandée.
+`mentions-legales.html` est **obligatoire** pour un site professionnel (loi LCEN). Elle est pré-remplie avec les informations de Love Dog's, l'hébergeur OVH et la réalisation Novalem. Les mentions entre crochets `[ ... ]` sont à compléter (adresse du siège, nom du représentant) : les repères `<!-- MODIFIER -->` dans le code indiquent où.
+
+`infos-a-completer.html` est une **page de travail** qui liste les questions à poser au client pour tout compléter. Elle n'est liée nulle part et ne doit pas être mise en ligne : à supprimer une fois les mentions légales finalisées.
+
+Les **CGV** ont été retirées : elles ne sont pas obligatoires pour un site vitrine sans vente en ligne. À ajouter seulement si des ventes en ligne sont mises en place plus tard.
 
 Le lien de crédit « Novalem » en pied de page pointe vers `https://novalem-recrutement.fr` ; le domaine du site dans `sitemap.xml` (`love-dogs.fr`) est un exemple à adapter au domaine réel.
