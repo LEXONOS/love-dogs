@@ -279,89 +279,44 @@
   <div class="wrap pricing">
     <div class="pricing-head reveal">
       <span class="kicker">Tarifs</span>
-      <h3 class="pricing-title">Estimez votre garde en quelques clics</h3>
-      <p class="pricing-sub">Choisissez le rythme, la durée et vos options : le total se calcule au fur et à mesure, sans surprise et sans engagement.</p>
+      <h3 class="pricing-title">Des tarifs simples et clairs</h3>
+      <p class="pricing-sub">Vous choisissez le rythme des visites, on s'occupe de tout le reste.</p>
     </div>
 
-    <div class="quote" id="devis">
-      <div class="quote-form reveal">
-
-        <fieldset class="q-block">
-          <legend class="q-legend"><span class="q-num">1</span>Le rythme des visites</legend>
-          <div class="formulas" role="group" aria-label="Choisissez votre formule">
-            <button type="button" class="formula is-on" data-formula="1" aria-pressed="true">
-              <span class="formula-check" aria-hidden="true"><svg viewBox="0 0 24 24"><use href="#i-check"/></svg></span>
-              <span class="formula-name">1 visite par jour</span>
-              <span class="formula-price"><b class="count" data-to="20">0</b><em>€</em><span>/ jour</span></span>
-              <span class="formula-desc">La formule idéale pour un chien autonome.</span>
-            </button>
-            <button type="button" class="formula featured" data-formula="2" aria-pressed="false">
-              <span class="formula-flag">Économisez 5 €</span>
-              <span class="formula-check" aria-hidden="true"><svg viewBox="0 0 24 24"><use href="#i-check"/></svg></span>
-              <span class="formula-name">2 visites par jour</span>
-              <span class="formula-price"><b class="count" data-to="35">0</b><em>€</em><span>/ jour</span></span>
-              <span class="formula-desc">Matin et soir, <s>40 €</s> au lieu de deux visites séparées.</span>
-            </button>
-          </div>
-        </fieldset>
-
-        <fieldset class="q-block">
-          <legend class="q-legend"><span class="q-num">2</span>La durée et vos chiens</legend>
-
-          <div class="q-row">
-            <span class="q-ico"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="#i-clock"/></svg></span>
-            <span class="q-txt"><b>Nombre de jours</b><small>Du premier au dernier jour de garde</small></span>
-            <span class="stepper">
-              <button type="button" class="step-btn" data-step="jours" data-dir="-1" aria-label="Retirer un jour">−</button>
-              <output id="v-jours">3</output>
-              <button type="button" class="step-btn" data-step="jours" data-dir="1" aria-label="Ajouter un jour">+</button>
-            </span>
-          </div>
-
-          <div class="q-row">
-            <span class="q-ico"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="#i-users"/></svg></span>
-            <span class="q-txt"><b>Nombre de chiens</b><small>+ 5 € par chien supplémentaire, à chaque visite</small></span>
-            <span class="stepper">
-              <button type="button" class="step-btn" data-step="chiens" data-dir="-1" aria-label="Retirer un chien">−</button>
-              <output id="v-chiens">1</output>
-              <button type="button" class="step-btn" data-step="chiens" data-dir="1" aria-label="Ajouter un chien">+</button>
-            </span>
-          </div>
-        </fieldset>
-
-        <fieldset class="q-block">
-          <legend class="q-legend"><span class="q-num">3</span>Les options</legend>
-
-          <div class="q-row">
-            <span class="q-ico"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="#i-leash"/></svg></span>
-            <span class="q-txt"><b>Promenades</b><small>15 à 30 min, 10 € par chien et par promenade</small></span>
-            <span class="segmented" role="group" aria-label="Promenades par jour">
-              <button type="button" class="seg is-on" data-promenades="0" aria-pressed="true">Aucune</button>
-              <button type="button" class="seg" data-promenades="1" aria-pressed="false">1 / jour</button>
-              <button type="button" class="seg" data-promenades="2" aria-pressed="false">2 / jour</button>
-            </span>
-          </div>
-
-          <div class="q-row q-row-range">
-            <span class="q-ico"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="#i-car"/></svg></span>
-            <span class="q-txt"><b>Distance depuis Le Gosier</b><small>Inclus jusqu'à 5 km, puis 0,50 € / km aller-retour</small></span>
-            <span class="q-range-val" id="v-km">5 km</span>
-            <input type="range" id="r-km" class="q-range" min="0" max="40" step="1" value="5" aria-label="Distance en kilomètres" />
-          </div>
-        </fieldset>
+    <div class="formulas">
+      <div class="formula reveal">
+        <span class="formula-name">1 visite par jour</span>
+        <div class="formula-price"><b class="count" data-to="20">0</b><em>€</em><span>/ jour</span></div>
+        <p class="formula-desc">La formule idéale pour un chien autonome.</p>
       </div>
+      <div class="formula featured reveal">
+        <span class="formula-flag">Économisez 5 €</span>
+        <span class="formula-name">2 visites par jour</span>
+        <div class="formula-price"><b class="count" data-to="35">0</b><em>€</em><span>/ jour</span></div>
+        <p class="formula-desc">Matin et soir, <s>40 €</s> au lieu de deux visites séparées.</p>
+      </div>
+    </div>
 
-      <aside class="quote-recap reveal">
-        <span class="recap-tag"><svg class="ico" aria-hidden="true"><use href="#i-paw"/></svg>Votre estimation</span>
-        <div class="recap-live" aria-live="polite">
-          <div class="recap-total"><b id="q-total">60</b><em>€</em></div>
-          <p class="recap-sub" id="q-sub">3 jours, 1 visite par jour, 1 chien</p>
-        </div>
-        <ul class="recap-lines" id="q-lines"></ul>
-        <div class="recap-day"><span>Coût moyen par jour</span><b id="q-day">20 €</b></div>
-        <a href="https://wa.me/590690302359" class="btn btn-primary recap-btn" id="q-wa" target="_blank" rel="noopener"><svg class="ico" aria-hidden="true"><use href="#i-wa"/></svg><span>Envoyer cette estimation</span></a>
-        <p class="recap-note">Estimation indicative, sans engagement. Alexandre confirme le tarif exact et les disponibilités avant toute réservation.</p>
-      </aside>
+    <div class="addons">
+      <div class="addon reveal">
+        <span class="addon-ico"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="#i-leash"/></svg></span>
+        <div class="addon-txt"><b>Promenade</b><small>15 à 30 min, en option à chaque visite</small></div>
+        <span class="addon-amt">10 €<em>/ chien</em></span>
+      </div>
+      <div class="addon reveal">
+        <span class="addon-ico"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="#i-users"/></svg></span>
+        <div class="addon-txt"><b>Chien supplémentaire</b><small>par intervention</small></div>
+        <span class="addon-amt">+5 €</span>
+      </div>
+      <div class="addon reveal">
+        <span class="addon-ico"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="#i-car"/></svg></span>
+        <div class="addon-txt"><b>Déplacement</b><small>inclus jusqu'à 5 km, aller-retour</small></div>
+        <span class="addon-amt">0,50 €<em>/ km au-delà</em></span>
+      </div>
+    </div>
+
+    <div class="pricing-cta reveal">
+      <a href="#contact" class="btn btn-primary"><span>Réserver une visite</span><svg class="paw-btn" viewBox="0 0 24 24" aria-hidden="true"><use href="#i-paw"/></svg></a>
     </div>
   </div>
 </section>
